@@ -16,13 +16,14 @@ pip3 install select
 When you have installed and set up AbracaDABra according to manual of AbracaDABra you find in the repository linked above and you can already listen to radio, it is time to open the scanner function. There are only a few things you need to set up:
 
 1. set the file path you want the scanner to store the logs.
-<img width="1080" height="676" alt="Bildschirmfoto 2026-11-13 um 15 44 39" src="https://github.com/user-attachments/assets/2bbfada8-15ee-4189-9392-cced985fc21d" />
+<img width="1080" height="676" alt="Bildschirmfoto 2026-11-13 um 15 44 39" src="https://github.com/user-attachments/assets/357d25cc-5f7f-4bc3-8c97-e28ef57e935c" />
 
 2. set location, so a distance between transmitter and receiver can be calculated. You can input a fix GPS position ore use a GPS receiver. These settings can be found in the Settings/TII menu. Also you need to download the transmitter database in the top of the TII settings page.
-<img width="1551" height="902" alt="Bildschirmfoto 2026-11-13 um 16 13 13" src="https://github.com/user-attachments/assets/f9158034-a938-430a-b970-3bcd632a6593" />
+<img width="1551" height="902" alt="Bildschirmfoto 2026-11-13 um 16 13 13" src="https://github.com/user-attachments/assets/2629f4dd-a417-4490-a902-60f9d1bf8da1" />
+
 
 3. set the scanner to automatically save to csv, set decoding modus and the numbers of scans. The number of scans should be Inf (-1):
-<img width="1551" height="902" alt="Bildschirmfoto 2026-11-13 um 16 07 45" src="https://github.com/user-attachments/assets/3629d0c8-846a-4f13-9eb3-5dbbfa02c30f" />
+<img width="1551" height="902" alt="Bildschirmfoto 2026-11-13 um 16 07 45" src="https://github.com/user-attachments/assets/a15d20c2-98b6-4df4-932f-0d5f1d491838" />
 
 Now AbracaDABra is ready and you can hit the start button.
 
