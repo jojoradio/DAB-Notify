@@ -32,7 +32,7 @@ Now AbracaDABra is ready and you can hit the start button.
 # DAB-Notify for alertzy
 
 ## Set up DAB-Notify for alertzy
-First download DAB-notify_alertzy.py from this repository, download the alertzy app for iOS or Android and  follow their tutorial on how to set it up: https://alertzy.app\
+First download DAB-notify_alertzy.py from this repository, download the alertzy app for iOS or Android and  follow their tutorial on how to set it up: https://alertzy.app
 When you got your account ID you can open DAB-notify_alertzy.py with an editor an set it up.
 There are only a few variables to be set to your needs:
 ```
