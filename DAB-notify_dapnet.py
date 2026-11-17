@@ -1,13 +1,12 @@
 # Date: 17-11-2026
-# Author: jojopi, based on work by peppe8o
-# this python script is licensed under CC BY-SA 4.0
+# Author: jojopi, based on work by PD2HASB
 # Version 1.1
 
 # This python scripts sends dx notifications to your dapnet pager, when DAB+ Transmitters in a given distance and beyond get received by AbracaDABra (https://github.com/KejPi/AbracaDABra).
 # It is based on Python-to-DapNET by PD2HSB: https://github.com/PD2HSB/Python-to-DapNET/tree/main
 
 # you need to set variables in the "variables to be set by user" section before you can run this script the first time
-# usage: $ tail -f <pathtoDABscannerfile.csv> | python3 DAB_DX-alertzy.py
+# usage: $ tail -f <pathtoDABscannerfile.csv> | python3 DAB-notify_dapnet.py
 
 
 import sys
