@@ -55,7 +55,7 @@ location_whitelist = {"Næstved/Øverup/Køgevej 291","Garz (Rügen)"}
 ```
 $ tail -f <pathtoDABscannerfile.csv> | python3 DAB-notify_alertzy.py
 ```
-You will find the csv file you need when the scanner is active only. Be sure to copy the path to the csv file the scanner is actively writing to. If everything works as expected, you will get a notification that DAB-Notify is running as soon as the first entry is written to the file. \
+You will find the csv file you need when the scanner is active only. Be sure to copy the path to the csv file the scanner is actively writing to. If everything works as expected, you will get a notification that DAB-Notify is running as soon as the first entry is written to the file.
 
 DAB-Notify for alertzy is based on a tutorial by peppe8o: https://peppe8o.com/smartphone-notifications-raspberry-pi-alertzy/
 
@@ -89,7 +89,7 @@ If you like to get detailed informations about errors occur when delivering a me
 ```
 $ tail -f <pathtoDABscannerfile.csv> | python3 DAB-notify_dapnet.py
 ```
-You will find the csv file you need when the scanner is active only. Be sure to copy the path to the csv file the scanner is actively writing to. If everything works as expected, you will get a notification that DAB-Notify is running as soon as the first entry is written to the file. \
+You will find the csv file you need when the scanner is active only. Be sure to copy the path to the csv file the scanner is actively writing to. If everything works as expected, you will get a notification that DAB-Notify is running as soon as the first entry is written to the file.
 
 DAB-notify_dapnet.py based on Python-to-DapNET by PD2HSB: https://github.com/PD2HSB/Python-to-DapNET/tree/main
 
@@ -103,4 +103,4 @@ At the moment DAB-notify_callmebot.py works for direct messages via telegram onl
 ```
 $ tail -f <pathtoDABscannerfile.csv> | python3 DAB-notify_callmebot.py
 ```
-You will find the csv file you need when the scanner is active only. Be sure to copy the path to the csv file the scanner is actively writing to. If everything works as expected, you will get a notification that DAB-Notify is running as soon as the first entry is written to the file. \
+You will find the csv file you need when the scanner is active only. Be sure to copy the path to the csv file the scanner is actively writing to. If everything works as expected, you will get a notification that DAB-Notify is running as soon as the first entry is written to the file.
