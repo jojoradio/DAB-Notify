@@ -92,3 +92,15 @@ $ tail -f <pathtoDABscannerfile.csv> | python3 DAB-notify_dapnet.py
 You will find the csv file you need when the scanner is active only. Be sure to copy the path to the csv file the scanner is actively writing to. If everything works as expected, you will get a notification that DAB-Notify is running as soon as the first entry is written to the file.\
 
 DAB-notify_dapnet.py based on Python-to-DapNET by PD2HSB: https://github.com/PD2HSB/Python-to-DapNET/tree/main
+
+# DAB-Notify for CallMeBot
+
+## Set up DAB-Notify for CallMeBot
+Install and set up CallMeBot according to https://github.com/jutge-org/callmebot Make shure to set you username right in ./.secrets/secrets.yml \
+At the moment DAB-notify_callmebot.py works for direct messages via telegram only.
+
+## Run DAB-Notify for CallMeBot
+```
+$ tail -f <pathtoDABscannerfile.csv> | python3 DAB-notify_callmebot.py
+```
+You will find the csv file you need when the scanner is active only. Be sure to copy the path to the csv file the scanner is actively writing to. If everything works as expected, you will get a notification that DAB-Notify is running as soon as the first entry is written to the file.\
