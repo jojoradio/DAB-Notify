@@ -1,12 +1,13 @@
-# Date: 12-11-2026
-# Author: jojopi, based on work by PD2HSB
-# Version 1.0
+# Date: 17-11-2026
+# Author: jojopi, based on work by peppe8o
+# this python script is licensed under CC BY-SA 4.0
+# Version 1.1
 
 # This python scripts sends dx notifications to your dapnet pager, when DAB+ Transmitters in a given distance and beyond get received by AbracaDABra (https://github.com/KejPi/AbracaDABra).
 # It is based on Python-to-DapNET by PD2HSB: https://github.com/PD2HSB/Python-to-DapNET/tree/main
 
 # you need to set variables in the "variables to be set by user" section before you can run this script the first time
-# usage: $ tail -f <pathtoDABscannerfile.csv> | python3 DAB-notify_dapnet.py
+# usage: $ tail -f <pathtoDABscannerfile.csv> | python3 DAB_DX-alertzy.py
 
 
 import sys
@@ -18,16 +19,15 @@ import select
 
 # variables to be set by user
   
-callsign = "<hampeger.de username>"
-password = "<hampager.de password>" 
+callsign = "<hampager.de username>"
+password = "<hampager.de password" 
 url = "http://www.hampager.de/api/calls" # set hampager API URL
 dxdistance = 200.0 #must be float type
-tocall = "<callsign>"
-groupname = "<txgroup>" #name of valid tx-group, please keep this restrictive to reduce system load.
+tocall = "<recipents callsign>"
+groupname = "<txgroup>"#"dl-ni-weserems" #name of valid tx-group, please keep this restrictive to reduce system load.
 dead_time = 3600 #time in seconds to trigger a notification about same transmitter location again
 maxretry = 4 #number of retries to send a message if there is an network error befor it gets dropped
 location_whitelist = {} #whitelist, independent of distance
-debug = 0
 
 # system variables
 location_last_action = {}
@@ -57,9 +57,7 @@ def notify(call,message,txgroup):
 			print("Message send to "+cs)
 		except requests.exceptions.ConnectionError as err:
 			print(datetime.datetime.now())
-			print(f"Error sending message: {response.status_code}")
-			if debug != 0:
-				print(response.text)
+			print(f"Error sending message: {err}")
 			if retry < maxretry:
 				print(f"Waiting 60 seconds to try again")
 				retry = retry + 1
