@@ -45,8 +45,8 @@ dead_time = 3600 #time in seconds to trigger a notification about same transmitt
 maxretry = 4 #number of retries to send a message if there is an network error befor it gets dropped
 location_whitelist = {} #whitelist, independent of distance
 ```
-You can name the receiver as you like. It might help you to see which receiver sent you a notification if you have more than one running. The dxdistance is the minimum distance in km of a transmitter to your location to trigger a notification. When a given transmitter gets received over and over again, DAB-Notify will not send you a notification again and again. It will wait as many seconds as set in dead_time before sending a notification again.\
-Transmitters given in location_whitelist trigger notifications independent from dxdistance. Be sure to input the exact names as given by the transmitter database. You can copy them out of list of the scanner for example.\
+You can name the receiver as you like. It might help you to see which receiver sent you a notification if you have more than one running. The dxdistance is the minimum distance in km of a transmitter to your location to trigger a notification. When a given transmitter gets received over and over again, DAB-Notify will not send you a notification again and again. It will wait as many seconds as set in dead_time before sending a notification again. \
+Transmitters given in location_whitelist trigger notifications independent from dxdistance. Be sure to input the exact names as given by the transmitter database. You can copy them out of list of the scanner for example. \
 It then should look like this:
 ```
 location_whitelist = {"Næstved/Øverup/Køgevej 291","Garz (Rügen)"}
@@ -55,7 +55,7 @@ location_whitelist = {"Næstved/Øverup/Køgevej 291","Garz (Rügen)"}
 ```
 $ tail -f <pathtoDABscannerfile.csv> | python3 DAB-notify_alertzy.py
 ```
-You will find the csv file you need when the scanner is active only. Be sure to copy the path to the csv file the scanner is actively writing to. If everything works as expected, you will get a notification that DAB-Notify is running as soon as the first entry is written to the file.\
+You will find the csv file you need when the scanner is active only. Be sure to copy the path to the csv file the scanner is actively writing to. If everything works as expected, you will get a notification that DAB-Notify is running as soon as the first entry is written to the file. \
 
 DAB-Notify for alertzy is based on a tutorial by peppe8o: https://peppe8o.com/smartphone-notifications-raspberry-pi-alertzy/
 
@@ -89,7 +89,7 @@ If you like to get detailed informations about errors occur when delivering a me
 ```
 $ tail -f <pathtoDABscannerfile.csv> | python3 DAB-notify_dapnet.py
 ```
-You will find the csv file you need when the scanner is active only. Be sure to copy the path to the csv file the scanner is actively writing to. If everything works as expected, you will get a notification that DAB-Notify is running as soon as the first entry is written to the file.\
+You will find the csv file you need when the scanner is active only. Be sure to copy the path to the csv file the scanner is actively writing to. If everything works as expected, you will get a notification that DAB-Notify is running as soon as the first entry is written to the file. \
 
 DAB-notify_dapnet.py based on Python-to-DapNET by PD2HSB: https://github.com/PD2HSB/Python-to-DapNET/tree/main
 
@@ -103,4 +103,4 @@ At the moment DAB-notify_callmebot.py works for direct messages via telegram onl
 ```
 $ tail -f <pathtoDABscannerfile.csv> | python3 DAB-notify_callmebot.py
 ```
-You will find the csv file you need when the scanner is active only. Be sure to copy the path to the csv file the scanner is actively writing to. If everything works as expected, you will get a notification that DAB-Notify is running as soon as the first entry is written to the file.\
+You will find the csv file you need when the scanner is active only. Be sure to copy the path to the csv file the scanner is actively writing to. If everything works as expected, you will get a notification that DAB-Notify is running as soon as the first entry is written to the file. \
